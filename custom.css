@@ -1,0 +1,328 @@
+.no-margin {
+    margin: 0px 0px 0px 0px
+}
+
+.inline {
+    display: inline;
+}
+
+.me-bg {
+    background-image: url("img/Me_BG_2.png");
+    background-size: cover;
+    background-position: 0%;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border-radius: 10px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.header-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    padding-left: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.bg-beige {
+    background-color: grey;
+}
+
+/* heading 1 */
+.heading-1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Garamond;
+}
+
+.heading-3 {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Helvetica;
+}
+
+.heading-4 {
+    font-size: 32px;
+    font-weight: 100;
+    font-family: Helvetica;
+}
+
+.heading-5 {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Helvetica;
+}
+
+.margin-right-1 {
+    margin-right: 5px
+}
+
+.paragraph-1 {
+    font-size: 18px;
+    font-family: Verdana;
+}
+
+.spacer {
+    padding-top: 25px
+}
+
+.spacer-0 {
+    padding-top: 15px
+}
+
+/* vertical margin 1 */
+.vm-1 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.spacer-2 {
+    padding-top: 50px
+}
+
+.mw-3 {
+    max-width: 850px
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.almost-bold {
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.project-card {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+.project-subcard {
+    background-color: rgb(228, 228, 151);
+    padding: 10px;
+    border-radius: 10px;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+/* I need to figure out how to access a database to pull individual project photo */
+.project-card-photo {
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.horizontal {
+    display: flex;
+}
+
+.vertical-mobile-horizontal {
+    display: block;
+}
+
+.horizontal_vertical-mobile {
+    display: block;
+}
+
+.content-left {
+    display: flex;
+    justify-content: right;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.lfp-top-section {
+    background-image: linear-gradient(80deg, #468ce7, #87b9fc);
+    padding: 30px;
+    padding-left: 50px;
+}
+
+.padding-1 {
+    padding: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding-top: 200px;
+    background-image: linear-gradient(0deg, #686868a9, rgba(255, 255, 255, 0));
+}
+
+.project-top-section {
+    background-color: blanchedalmond;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.project-screenshot {
+    background-size: cover;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.adaptive-padding-1 {
+    padding: 20px;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+.grey-bg {
+    background-color: grey;
+}
+
+.grey-gradient-bg {
+    background-image: linear-gradient(180deg, #929292, rgb(85, 85, 85));
+}
+
+.blue-gradient-bg {
+    background-image: linear-gradient(180deg, #759bec, rgb(8, 86, 231));
+}
+
+.orange-gradient-bg {
+    background-image: linear-gradient(180deg, #ecbc75, rgb(231, 116, 8));
+}
+
+.green-gradient-bg {
+    background-image: linear-gradient(180deg, #50ce8f, rgb(26, 155, 65));
+}
+
+.white-text {
+    color: white;
+}
+
+.height-max {
+    height: 100%;
+}
+
+.center-align {
+    display: flex;
+    align-items: center;
+}
+
+.icon-arrow-left-short {
+    width: 40px;
+    height: 100%;
+}
+
+.a-no-underline {
+    text-decoration: none;
+    color: black;
+}
+
+.img-1 {
+    width: 300px;
+}
+
+.mw-70-768-plus {
+    max-width: 100%;
+}
+
+.visible-on-mobile-only {
+    display: block;
+}
+
+.btn-big {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* anything greater (or equal to?) than 768px, this applies to */
+@media only screen and (min-width: 768px) {
+    .project-card {
+        background-color: beige;
+        padding: 10px;
+        border-radius: 10px;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    .vertical-mobile-horizontal {
+        display: flex;
+    }
+
+    .top-section {
+        justify-content: right;
+        padding-right: 10%;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        margin-left: 20px;
+        margin-right: 25px;
+        margin-top: 20px;
+    }
+
+    .horizontal_md-vertical {
+        display: flex;
+        align-items: center;
+    }
+
+    .me-bg {
+        background-position: 70%;
+    }
+
+    .padding-1 {
+        padding: 20px;
+    }
+
+    .visible-on-mobile-only {
+        display: none;
+    }
+
+    .mw-70-768-plus {
+        max-width: 70%;
+    }
+}
+
+/* anything greater than or equal to 1200, this applies to */
+@media only screen and (min-width: 1200px) {
+    .project-screenshot {
+        background-size: cover;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+
+    .me-bg {
+        background-position: 85%;
+    }
+}
+
+
+/* anything greater than or equal to 1500, this applies to */
+@media only screen and (min-width: 1500px) {
+    .me-bg {
+        background-position: 100%;
+    }
+}
