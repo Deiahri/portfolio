@@ -1,6 +1,3 @@
-
-
-
 my_email = "junda.yin1@gmail.com"
 
 projects_data = [
