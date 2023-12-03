@@ -1,12 +1,5 @@
 
-abt_me_section = document.getElementById("about_me_section");
-project_section = document.getElementById("projects");
 
-abt_me_btn = document.getElementById("about_me_button");
-projects_btn = document.getElementById("projects_button");
-
-projects_btn.onclick = project_section.scrollIntoView;
-abt_me_btn.onclick = abt_me_section.scrollIntoView;
 
 my_email = "junda.yin1@gmail.com"
 
@@ -37,7 +30,17 @@ projects_data = [
         "study-tool.png",
         "study-tool.html",
         "orange-gradient-bg"
-    ]
+    ],
+    [
+        "Digital Portfolio",
+        "Bootstrap, JavaScript",
+        "A place where you can see all the projects I have done!",
+        "View Project",
+        "Picture of Myself 4.jpg",
+        "digital-portfolio.html",
+        "yellow-gradient-bg"
+    ],
+    
 ]
 
 for (project_data_index in projects_data) {
@@ -118,7 +121,7 @@ for (project_data_index in projects_data) {
     project_item_containter.appendChild(row_element);
 }
 
-email_time_out = "";
+email_time_out = null;
 
 function copy_email() {
     clearTimeout(email_time_out);
@@ -132,7 +135,7 @@ function copy_email() {
 }    
 
 
-call_time_out = "";
+call_time_out = null;
 
 function call_phone() {
     clearTimeout(call_time_out);
@@ -149,3 +152,17 @@ email_button.onclick = copy_email;
 
 call_button = document.getElementById("call-button");
 call_button.onclick = call_phone;
+
+
+function specialScroll() {
+    window.scrollTo(0, document.getElementById('projects_projects').offsetTop - 100);
+}
+abt_me_section = document.getElementById("about_me_section");
+project_section = document.getElementById("projects_projects");
+
+
+abt_me_btn = document.getElementById("about_me_button");
+projects_btn = document.getElementById("projects_button");
+
+abt_me_btn.onclick = abt_me_section.scrollIntoView;
+projects_btn.onclick = specialScroll;
