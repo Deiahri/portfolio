@@ -2,6 +2,15 @@ my_email = "junda.yin1@gmail.com"
 
 projects_data = [
     [
+        "TicTacToe AI",
+        "JavaScript, Python",
+        "Using concepts of Artificial Intelligence, we created a formidable TicTacToe Bot!",
+        "View Project",
+        "tictactoe.png",
+        "tictactoe.html",
+        "red-gradient-bg"
+    ],
+    [
         "BTTL",
         "Python, GitHub",
         "Travelling? Determine the best time to leave to avoid the most traffic.",
@@ -33,11 +42,10 @@ projects_data = [
         "Bootstrap, JavaScript",
         "A place where you can see all the projects I have done!",
         "View Project",
-        "Picture of Myself 4.jpg",
+        "Picture of Myself 4.png",
         "digital-portfolio.html",
         "yellow-gradient-bg"
-    ],
-    
+    ]
 ]
 
 for (project_data_index in projects_data) {
@@ -152,7 +160,7 @@ call_button.onclick = call_phone;
 
 
 function specialScroll() {
-    window.scrollTo(0, document.getElementById('projects_projects').offsetTop - 100);
+    window.scrollTo(0, document.getElementById('projects_projects').offsetTop - 50);
 }
 abt_me_section = document.getElementById("about_me_section");
 project_section = document.getElementById("projects_projects");
