@@ -6,7 +6,7 @@ projects_data = [
         "JavaScript, Python",
         "Using concepts of Artificial Intelligence, we created a formidable TicTacToe Bot!",
         "View Project",
-        "tictactoe.png",
+        "TicTacToe.png",
         "tictactoe.html",
         "red-gradient-bg"
     ],
@@ -42,7 +42,7 @@ projects_data = [
         "Bootstrap, JavaScript",
         "A place where you can see all the projects I have done!",
         "View Project",
-        "Picture-of-Myself-4.png",
+        "Picture-of-Myself-4.PNG",
         "digital-portfolio.html",
         "yellow-gradient-bg"
     ]
