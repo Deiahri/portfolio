@@ -81,6 +81,7 @@ class projectCard {
         let projectButton = document.createElement('a');
         projectButton.classList = 'btn btn-outline-light fw-bold rounded-pill mt-2';
         projectButton.innerHTML = this.buttonText;
+        projectButton.href = `./projects/${this.projectHTML}`;
 
         buttonContainer.appendChild(projectButton);
 
