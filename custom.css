@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(247, 247, 247);
+    margin: 0px;
+}
+
 .no-margin {
     margin: 0px 0px 0px 0px
 }
@@ -117,6 +122,13 @@
     margin-bottom: 5px;
 }
 
+.project-card-2 {
+    background-color: beige;
+    padding: 10px;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
 .project-subcard {
     background-color: rgb(228, 228, 151);
     padding: 10px;
@@ -133,6 +145,19 @@
     height: 200px;
     border-radius: 10px;
     margin-right: 10px;
+}
+
+.project-card-2-photo {
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    margin-right: 10px;
+
+    border: rgba(0, 0, 0, 0.3);
+    border-bottom:rgba(255, 255, 255, 0);
+    border-width: 1px;
+    border-style: solid;
 }
 
 .horizontal {
@@ -278,12 +303,34 @@
     padding-right: 20px;
 }
 
+.search-bar {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 24px;
+    border-radius: 60px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.searchTechnologiesArea {
+    margin-top: 10px;
+}
+
+
 /* anything greater (or equal to?) than 768px, this applies to */
 @media only screen and (min-width: 768px) {
     .project-card {
         background-color: beige;
         padding: 10px;
         border-radius: 10px;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    .project-card-2 {
+        background-color: beige;
+        padding: 10px;
         align-content: center;
         margin-bottom: 20px;
     }
@@ -298,7 +345,7 @@
         padding-top: 150px;
         padding-bottom: 150px;
         margin-left: 20px;
-        margin-right: 25px;
+        margin-right: 20px;
         margin-top: 20px;
     }
 
@@ -322,6 +369,14 @@
     .mw-70-768-plus {
         max-width: 70%;
     }
+    .search-bar {
+        width: 70vw;
+    }
+
+    .searchTechnologiesArea {
+        margin-top: 10px;
+    }
+
 }
 
 /* anything greater than or equal to 1200, this applies to */
