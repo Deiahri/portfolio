@@ -246,6 +246,10 @@ body {
     background-image: linear-gradient(180deg, #d44d4d, rgb(201, 23, 23));
 }
 
+.light-blue-gradient-bg {
+    background-image: linear-gradient(180deg, rgb(99, 190, 226), rgb(0, 117, 163));
+}
+
 .blue-gradient-bg {
     background-image: linear-gradient(180deg, #759bec, rgb(8, 86, 231));
 }

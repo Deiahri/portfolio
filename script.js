@@ -2,6 +2,15 @@ my_email = "junda.yin1@gmail.com"
 
 projects_data = [
     [
+        "Bank Application V2",
+        ["Node.js", "JavaScript", "Express.js", "PostgreSQL", "BootStrap"],
+        "A mock bank application that uses RESTful API and SQL database. Developed with the Cowboy Agile Methodology.",
+        "View Project",
+        "bankV2.png",
+        "bank-application-2.html",
+        "light-blue-gradient-bg"
+    ],
+    [
         "TicTacToe AI",
         ["JavaScript", "Python"],
         "Using concepts of Artificial Intelligence, we created a formidable TicTacToe Bot!",
@@ -39,7 +48,7 @@ projects_data = [
     ],
     [
         "Digital Portfolio",
-        ["Bootstrap", "JavaScript"],
+        ["BootStrap", "JavaScript"],
         "A place where you can see all the projects I have done!",
         "View Project",
         "Picture-of-Myself-4.PNG",
