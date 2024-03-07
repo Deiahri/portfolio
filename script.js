@@ -6,9 +6,12 @@ projects_data = [
         ["Node.js", "JavaScript", "Express.js", "PostgreSQL", "BootStrap"],
         "A mock bank application that uses RESTful API and SQL database. Developed with the Cowboy Agile Methodology.",
         "View Project",
-        "bankV2.png",
+        "BankOfDeiahri-w-BG.png",
         "bank-application-2.html",
-        "light-blue-gradient-bg"
+        "light-blue-gradient-bg",
+        {
+            'demo': true
+        }
     ],
     [
         "TicTacToe AI",
@@ -17,7 +20,10 @@ projects_data = [
         "View Project",
         "TicTacToe.png",
         "tictactoe.html",
-        "red-gradient-bg"
+        "red-gradient-bg",
+        {
+            'demo': true
+        }
     ],
     [
         "BTTL",
@@ -70,11 +76,12 @@ for (project_data_index in projects_data) {
     project_image_name = current_project_data[4];
     project_url = current_project_data[5];
     card_bg_color = ""+current_project_data[6];
+    projectSettings = current_project_data[7];
 
     let projectElement = new projectCard(
         project_header_text, project_technologies, project_description_text, 
         project_button_text, project_image_name, project_url,
-        card_bg_color
+        card_bg_color, projectSettings
     );
 
     project_item_containter.appendChild(projectElement.element);

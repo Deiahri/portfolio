@@ -37,7 +37,7 @@ function toggleClick(s) {
 
 class projectCard {
     constructor(title = "Title", technologies = new Array(), description = "Description", buttonText = "button text", imagePath = "Picture-of-Myself-4.PNG", 
-        projectHTML = "", backgroundColor = "blue-gradient-bg") {
+        projectHTML = "", backgroundColor = "blue-gradient-bg", projectSettings) {
         this.title = title;
         this.technologies = technologies;
         this.description = description;
@@ -45,6 +45,7 @@ class projectCard {
         this.imagePath = imagePath;
         this.projectHTML = projectHTML;
         this.backgroundColor = backgroundColor;
+        this.projectSettings = projectSettings;
 
         addTechnologies(this.technologies);
         this.element = this.#constructElement();
@@ -56,8 +57,17 @@ class projectCard {
         projectContainer.classList = "col-xl-3 col-lg-4 col-sm-6 col-12";
 
         let projectPhoto = document.createElement('div');
-        projectPhoto.classList = 'project-card-2-photo';
+        projectPhoto.classList = 'project-card-2-photo position-relative';
         projectPhoto.style.backgroundImage = `url('img/${this.imagePath}')`;
+
+        if(this.projectSettings) {
+            if(this.projectSettings.demo) {
+                let projectPhotoBanner = document.createElement('div');
+                projectPhotoBanner.classList = 'position-absolute ms-2 mt-1 p-1 fw-bold white-text green-gradient-bg';
+                projectPhotoBanner.innerHTML = 'DEMO AVAILABLE';
+                projectPhoto.appendChild(projectPhotoBanner);
+            }
+        }
 
         let projectInfoContainer = document.createElement('div');
         projectInfoContainer.classList = `project-card-2 ${this.backgroundColor}`;
