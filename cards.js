@@ -63,7 +63,7 @@ class projectCard {
         if(this.projectSettings) {
             if(this.projectSettings.demo) {
                 let projectPhotoBanner = document.createElement('div');
-                projectPhotoBanner.classList = 'position-absolute ms-2 mt-1 p-1 fw-bold white-text green-gradient-bg';
+                projectPhotoBanner.classList = 'position-absolute ms-1 mt-1 p-1 fw-bold white-text green-gradient-bg';
                 projectPhotoBanner.innerHTML = 'DEMO AVAILABLE';
                 projectPhoto.appendChild(projectPhotoBanner);
             }

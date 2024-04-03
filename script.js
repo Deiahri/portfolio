@@ -26,6 +26,18 @@ projects_data = [
         }
     ],
     [
+        "Darwin Effect",
+        ["C#", "Unity"],
+        "A small simulation game based around evolution.",
+        "View Project",
+        "Darwin Effect Card extended.png",
+        "darwin-effect.html",
+        "light-blue-gradient-bg",
+        {
+            'demo': true
+        }
+    ],
+    [
         "BTTL",
         ["Python"],
         "Travelling? Determine the best time to leave to avoid the most traffic.",
