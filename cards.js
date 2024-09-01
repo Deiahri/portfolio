@@ -66,6 +66,11 @@ class projectCard {
                 projectPhotoBanner.classList = 'position-absolute ms-1 mt-1 p-1 fw-bold white-text green-gradient-bg';
                 projectPhotoBanner.innerHTML = 'DEMO AVAILABLE';
                 projectPhoto.appendChild(projectPhotoBanner);
+            } else if (this.projectSettings.live) {
+                let projectPhotoBanner = document.createElement('div');
+                projectPhotoBanner.classList = 'position-absolute ms-1 mt-1 p-1 fw-bold white-text green-gradient-bg';
+                projectPhotoBanner.innerHTML = 'LIVE SITE';
+                projectPhoto.appendChild(projectPhotoBanner);
             }
         }
 

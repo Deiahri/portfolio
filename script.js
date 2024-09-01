@@ -17,7 +17,10 @@ projects_data = [
         "View Project",
         "crossoverglobal.png",
         "crossover-global.html",
-        "coblue-gradient-bg"
+        "coblue-gradient-bg",
+        {
+            'live': true
+        }
     ],
     [
         "Bank Application V2",
