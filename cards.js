@@ -19,7 +19,7 @@ function addTechnologies(techArr) {
 let colorIndex = 0;
 function addTechnologyButton(buttonName) {
     let techButton = document.createElement('a');
-    techButton.classList = `btn btn-outline-${buttonColors[colorIndex]} fw-bold rounded-pill vm-1 mx-1 active`;
+    techButton.classList = `btn fw-bold rounded-pill vm-1 mx-1 filter`;
     techButton.innerHTML = buttonName;
     techButton.onclick = toggleClick.bind(
         null, techButton

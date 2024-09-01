@@ -2,6 +2,24 @@ my_email = "junda.yin1@gmail.com"
 
 projects_data = [
     [
+        "QuikTrip",
+        ["React", "Node.js", "Firebase"],
+        "The second iteration of the infamous BTTL. Determine the best time to leave to avoid the most traffic!",
+        "View Project",
+        "QuikTrip.png",
+        "quik-trip.html",
+        "blue-gradient-bg"
+    ],
+    [
+        "CrossoverGlobal.org",
+        ["BootStrap", "JavaScript"],
+        "A charity website I redesigned to reduce operating costs by 90%.",
+        "View Project",
+        "crossoverglobal.png",
+        "crossover-global.html",
+        "coblue-gradient-bg"
+    ],
+    [
         "Bank Application V2",
         ["Node.js", "JavaScript", "Express.js", "PostgreSQL", "BootStrap"],
         "A mock bank application that uses RESTful API and SQL database. Developed with the Cowboy Agile Methodology.",
@@ -167,7 +185,7 @@ function initiateSearch() {
 function search() {
     let searchText = searchBarElement.value.trim().toLowerCase();
     let activeTech = [];
-    for(techButton of projectSearchTechnologiesRegion.children) {
+    for(let techButton of projectSearchTechnologiesRegion.children) {
         if (techButton.classList.contains('active')) {
             activeTech.push(techButton.innerHTML);
         }
@@ -181,10 +199,15 @@ function search() {
             currentScore += searchWeights.title;
         }
 
-        for(let tech of activeTech) {
-            if(projectCard.hasTechnology(tech)) { 
-                currentScore += searchWeights.technologies;
+        // shows all items if no filter is active.
+        if (activeTech.length > 0) {
+            for(let tech of activeTech) {
+                if(projectCard.hasTechnology(tech)) { 
+                    currentScore += searchWeights.technologies;
+                }
             }
+        } else {
+            currentScore += 1000;
         }
 
         if(searchText != "") {

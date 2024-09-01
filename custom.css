@@ -11,6 +11,22 @@ body {
     display: inline;
 }
 
+.filter {
+    color: grey !important;
+    border: 1px solid black;
+    transition: background-color 200ms ease-in-out;
+}
+
+.filter:hover {
+    border: 1px solid black;
+}
+
+.filter.active {
+    background-color: rgb(64, 204, 64) !important;
+    color: whitesmoke !important;
+    outline: none;
+}
+
 .me-bg {
     background-image: url("img/Me_BG_2.png");
     background-size: cover;
@@ -256,6 +272,10 @@ body {
 
 .blue-gradient-bg {
     background-image: linear-gradient(180deg, #759bec, rgb(8, 86, 231));
+}
+
+.coblue-gradient-bg {
+    background-image: linear-gradient(180deg, #628ce6, #1543c8);
 }
 
 .orange-gradient-bg {
